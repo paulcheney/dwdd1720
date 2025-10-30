@@ -1,14 +1,13 @@
 /* -------------- COLOR SCHEME ---------------
-terra cotta #E07A5F
-deep slate blue #3D405B, 
-Light Grey #f5f5f7 
-Medium Grey #d2d2d2
-Dark Grey #323232  */
+primaryColor #60170b;
+greyColor #323232
+*/
 
 
 * {
     font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -36,12 +35,6 @@ header span {
 }
 
 
-
-
-
-
-
-
 /************************** NAVIGATION **************************/
 nav {
     background-color: #f5f5f7;
@@ -65,12 +58,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #E07A5F;
-}
-
-nav li.active a {
-    background-color: #d2d2d2;
-    color: #000;
+    color: #60170b;
 }
 
 nav.show {
@@ -93,4 +81,154 @@ nav.show {
 
 .hamburger.show::before {
     content: "\00D7";
+}
+
+
+
+
+/************************** MAIN LAYOUT **************************/
+h1 {
+    font-size: 1.5rem;
+    color: #3D405B;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+
+
+/************************** CARD LAYOUT **************************/
+.sbs section {
+    border: #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    margin: .5rem 10px;
+    overflow: hidden;
+}
+.sbs h2 {
+    background-color: #60170b;
+    color: #eee;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: .5rem .2rem;
+    text-align: center;
+}
+.sbs  p {
+    font-weight: 200;
+    margin: 10px;
+    line-height: 130%;
+}
+
+.sbs  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+/************************** CARDS **************************/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 50px 10px;
+    margin: 10px;
+}
+.cards section {
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cards h2 {
+    background-color: #b9b595;
+    color: rgba(0,0,0,0.8);
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: .5rem .2rem;
+    text-align: center;
+}
+
+.cards p {
+    font-weight: 200;
+    margin: 10px 10px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.cards img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.cards a {
+    background-color: #b9b595;
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 0 10% 10px 10%;
+    text-align: center;
+    border-radius: 20px;
+    &:hover {
+        background-color: #dbd7b2;
+        transform: translateY(2px);
+        box-shadow: 0 0 10px #999;
+    
+    }
+}
+
+
+
+
+
+
+
+
+/************************** SOCIAL MEDIA **************************/
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    margin-bottom: 1rem;
+}
+.social a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.5);
+}
+.social img {
+    width:22px;
+    height:22px;
+}
+.social a:hover {
+    background-color: rgba(255,255,255,0.9);
+}
+
+
+/************************** FOOTER **************************/
+footer {
+    background-color: #60170b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: .25rem;
+    font-size: .8rem;
+    font-weight: 300;
 }

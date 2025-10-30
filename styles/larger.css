@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 40rem) {
 
     header,
     main,
@@ -9,41 +9,35 @@
     }
 
 
-    button#hamburger {
+    #hamburger {
         display: none;
     }
 
-    nav {
-        grid-template-rows: 1fr;
-    }
+    nav {display: block;}
+    nav ul {display: flex; }
 
-    nav ul {
-        display: flex;
-    }
 
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
-    nav ul li a {
+    nav a {
         border: none;
+        padding: .5rem 1.5rem;
         border-right: 1px solid rgba(0, 0, 0, 0.2);
     }
 
-    nav ul li:last-child a {
-        border: none;
-    }
+    nav li:last-child a {border: none;}
 
 
 
-
-
-
-
-    footer {
+    .sbs {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
+
+
+
+
+
+
+
 
 
 
