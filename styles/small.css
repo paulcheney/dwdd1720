@@ -1,0 +1,96 @@
+/* -------------- COLOR SCHEME ---------------
+terra cotta #E07A5F
+deep slate blue #3D405B, 
+Light Grey #f5f5f7 
+Medium Grey #d2d2d2
+Dark Grey #323232  */
+
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/************************** HEADER **************************/
+header {
+    padding: 10px 0 10px 10px;
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 8px;
+    align-items: end;
+    border-bottom: 1px solid  rgba(0,0,0,0.1);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #323232;
+}
+
+
+
+
+
+
+
+
+/************************** NAVIGATION **************************/
+nav {
+    background-color: #f5f5f7;
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    font-size: .9rem;
+    font-weight: 300;
+    color: #323232;
+    text-decoration: none;
+    padding: .8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+    color: #E07A5F;
+}
+
+nav li.active a {
+    background-color: #d2d2d2;
+    color: #000;
+}
+
+nav.show {
+    display: block;
+}
+
+/************************** HAMBURGER NAVIGATION **************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #323232;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
